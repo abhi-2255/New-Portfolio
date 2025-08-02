@@ -2,33 +2,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNodeJs, faJs, faHtml5, faCss3Alt } from "@fortawesome/free-brands-svg-icons";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons"
 import { faServer } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "./navbar";
 
 function App() {
 
   return (
-
+<>
+<Navbar/>
     <div className="container mx-auto font-[Inter] scroll-smooth ">
       {/* Hero Section  */}
-      <section className="lg:px-10 md:px-5 sm:px-2 m-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 ">
+      <section className="lg:px-20 md:px-10 sm:px-5 px-5 mt-10 gap-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-12 ">
         {/* Image Section  */}
-        <div className="lg:col-span-4 rounded:xl ">
+        <div className="lg:col-span-4 rounded-xl overflow-hidden">
           <img src="/images/dp.webp" alt="" className="w-full h-full object-cover object-center " />
         </div>
         {/* Text Section  */}
-        <div className="px-4 py-2 grid grid-cols-1 gap-4 w-full lg:col-span-8">
+        <div className="lg:px-20 md:px-10 sm:px-4 px-4 grid grid-cols-1 gap-4 w-full h-full lg:col-span-8">
           <div>
             <h1 className="sm:text-2xl md:text-4xl lg:text-5xl font-black ">Hi, I'm Alex,</h1>
             <h1 className="sm:text-2xl md:text-4xl lg:text-5xl font-black"> a MERN Stack Developer</h1>
           </div>
           <p className="sm:text-sm md:text-lg lg:text-lg">I'm a passionate MERN Stack Developer with a focus on creating efficient and scalable web applications. I love turning ideas into reality through code. I specialize in building robust and user-friendly web solutions using the MERN Stack.</p>
           <button
-            className="bg-blue-100 hover:bg-blue-300 transition-all duration-300 py-2 px-4 w-full rounded-lg font-semibold">
+            className="bg-blue-100 hover:bg-blue-300 transition-all duration-300 py-2 px-4 w-full font-semibold rounded-xl ">
             View Projects
           </button>
         </div>
       </section>
+
       {/* Project Section  */}
-      <div className="lg:px-20 md:px-10 sm:px-5 px-5 pb-5 pt-5">
+      <div className="lg:px-20 md:px-10 sm:px-5 px-5 py-4 mt-5">
         <h2 className="text-3xl font-bold text">Featured Projects</h2>
       </div>
       {/* Project Alpha  */}
@@ -99,6 +102,7 @@ function App() {
 
 
     </div>
+</>
 
   )
 }
