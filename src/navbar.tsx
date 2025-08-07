@@ -7,13 +7,13 @@ export default function Navbar() {
 
     return (
         <>
-            <div className=" flex justify-between items-center px-10 h-15 w-full border-b border-gray-300 ">
-                <h2 className="lg:text-xl md:text-lg sm:text-md text-md font-semibold">Alex's Portfolio</h2>
-                <nav className="gap-4 hidden lg:inline-flex sm:hidden md:hidden ">
-                    <h2 className="text-lg font-medium">Home</h2>
-                    <h2 className="text-lg font-medium">Projects</h2>
-                    <h2 className="text-lg font-medium">Skills</h2>
-                    <h2 className="text-lg font-medium">Contact</h2>
+            <div className="flex justify-between items-center sticky top-0 bg-white px-10 h-16 w-full border-b border-gray-300 ">
+                <h2 className="lg:text-xl md:text-lg sm:text-lg text-lg font-semibold">Alex's Portfolio</h2>
+                <nav className="gap-10 hidden lg:inline-flex sm:hidden md:hidden ">
+                    <h2 className="text-lg font-medium hover:bg-sky-200 rounded-md transition-all cursor-pointer">Home</h2>
+                    <h2 className="text-lg font-medium hover:bg-sky-200 rounded-md transition-all cursor-pointer">Projects</h2>
+                    <h2 className="text-lg font-medium hover:bg-sky-200 rounded-md transition-all cursor-pointer">Skills</h2>
+                    <h2 className="text-lg font-medium hover:bg-sky-200 rounded-md  transition-all cursor-pointer">Contact</h2>
                 </nav>
                 <button onClick={() => setOpened(!menuOpened)} className="lg:hidden">
                     <Menu />
@@ -21,11 +21,11 @@ export default function Navbar() {
             </div>
             {
                 menuOpened && (
-                    <div className="bg-gray-500 absolute top-5 right-10">
-                        <h2 className="text-lg font-medium">Home</h2>
-                        <h2 className="text-lg font-medium">Projects</h2>
-                        <h2 className="text-lg font-medium">Skills</h2>
-                        <h2 className="text-lg font-medium">Contact</h2>
+                    <div className="absolute top-20 left-0 right-4 p-4 w-full bg-white gap-5 flex flex-col items-center transform transition-transform lg:hidden">
+                        <h2 className="text-lg font-medium cursor-pointer">Home</h2>
+                        <h2 className="text-lg font-medium cursor-pointer">Projects</h2>
+                        <h2 className="text-lg font-medium cursor-pointer">Skills</h2>
+                        <h2 className="text-lg font-medium cursor-pointer">Contact</h2>
                     </div>
                 )
             }
