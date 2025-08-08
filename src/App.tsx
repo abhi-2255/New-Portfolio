@@ -4,7 +4,6 @@ import { faLeaf } from "@fortawesome/free-solid-svg-icons"
 import { faServer } from '@fortawesome/free-solid-svg-icons';
 import { Copyright } from "lucide-react";
 import Navbar from "./navbar";
-
 function App() {
 
   return (
@@ -103,8 +102,6 @@ function App() {
         <div className="flex justify-center items-center lg:p-10 md:p-5 sm:p-5 p-5">
           <h2 className="flex items-center gap-1 lg:text-xl md:text-lg sm:text-sm text-sm text-gray-400"><Copyright size={20} />2025 Alex's Portfolio. All rights reserved.</h2>
         </div>
-
-
       </div>
     </>
 
