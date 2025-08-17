@@ -4,28 +4,11 @@ import { faLeaf } from "@fortawesome/free-solid-svg-icons"
 import { faServer } from '@fortawesome/free-solid-svg-icons';
 import { Copyright } from "lucide-react";
 import Navbar from "./navbar";
-import { useState } from "react";
-import axios from "axios";
+
 
 
 function App() {
-  const [projects, setProjects] = useState<any>(null)
-  const [skills, setSkills] = useState<any>(null)
-  const URL = import.meta.env.API_URL
-
-  const loadProjects = ()=>{
-    fetch(`${URL}/projects`)
-    .then((res)=> res.json())
-    .then((data)=> setProjects(data))
-    .catch((err)=> console.error("Error in Fetch Projects:",err));
-  }
-
-  const loadSkills = ()=>{
-    axios
-    .get(`${URL}/skills`)
-    .then((res)=>setSkills(res.data))
-    .catch((err)=>console.error("Error Fetching Skills:",err));
-  }
+  
 
   return (
     <>
