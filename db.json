@@ -8,48 +8,58 @@
     "projects": [
         {
             "id": 1,
-            "title": "project alpha",
-            "description": "A full-stack web application built with React, Node.js, Express, and MongoDB."
+            "title": "Project alpha",
+            "description": "A full-stack web application built with React, Node.js, Express, and MongoDB.",
+            "image":"/images/alpha.webp"
         },
         {
             "id": 2,
-            "title": "project beta",
-            "description": "An e-commerce platform developed using the MERN stack with user authentication and payment integration."
+            "title": "Project beta",
+            "description": "An e-commerce platform developed using the MERN stack with user authentication and payment integration.",
+            "image": "/images/beta.webp"
         },
         {
             "id": 3,
-            "title": "project gamma",
-            "description": "A social media application with real-time updates and user interactions"
+            "title": "Project gamma",
+            "description": "A social media application with real-time updates and user interactions",
+            "image": "/images/gamma.webp"
         }
     ],
     "skills": [
         {
             "id": 1,
-            "name": "React"
+            "name": "React",
+            "icon":"faReact"
         },
         {
             "id": 2,
-            "name": "Node"
+            "name": "Node",
+            "icon":"faNodeJs"
         },
         {
             "id": 3,
-            "name": "MongoDB"
+            "name": "MongoDB",
+            "icon":"faLeaf"
         },
         {
             "id": 4,
-            "name": "Express.js"
+            "name": "Express.js",
+            "icon":"faServer"
         },
         {
             "id": 5,
-            "name": "JavaScript"
+            "name": "JavaScript",
+            "icon":"faJs"
         },
         {
             "id": 6,
-            "name": "HTML5"
+            "name": "HTML5",
+            "icon": "faHtml5"
         },
         {
             "id": 7,
-            "name": "CSS3"
+            "name": "CSS3",
+            "icon":"faCss3Alt"
         }
     ],
     "Contact": []

@@ -1,14 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faNodeJs, faJs, faHtml5, faCss3Alt } from "@fortawesome/free-brands-svg-icons";
-import { faLeaf } from "@fortawesome/free-solid-svg-icons"
-import { faServer } from '@fortawesome/free-solid-svg-icons';
 import { Copyright } from "lucide-react";
 import Navbar from "./navbar";
-
-
+import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
 
 function App() {
-  
 
   return (
     <>
@@ -38,51 +33,8 @@ function App() {
         <div className="lg:px-20 md:px-10 sm:px-5 px-5 py-4 mt-10">
           <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-bold text">Featured Projects</h2>
         </div>
-        {/* Project Alpha  */}
-        <div className="gap-6 px-6 lg:px-20 md:px-10 sm:px-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="">
-            <div className="rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300">
-              <img src="/images/alpha.webp" alt="" className="object-cover object-center w-full h-full transform hover:scale-100 transition-transform duration-300" />
-            </div>
-            <div className="px-1 py-4">
-              <h3 className="lg:text-xl md:text-lg sm:text-lg mb-2">Project Alpha</h3>
-              <p className="text-md text-gray-700">A full-stack web application built with React, Node.js, Express, and MongoDB.</p>
-            </div>
-          </div>
-          {/* Project Beta  */}
-          <div className="">
-            <div className="rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300">
-              <img src="/images/beta.webp" alt="" className="object-cover object-center w-full h-full transform hover:scale-100 transition-transform duration-300" />
-            </div>
-            <div className="px-1 py-4">
-              <h3 className="lg:text-xl md:text-lg sm:text-lg mb-2">Project Beta</h3>
-              <p className="text-md text-gray-700">An e-commerce platform developed using the MERN stack with user authentication and payment integration.</p>
-            </div>
-          </div>
-          {/* Project Gamma  */}
-          <div className="">
-            <div className="rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300">
-              <img src="/images/gamma.webp" alt="" className="object-cover object-center w-full h-full transform hover:scale-100 transition-transform duration-300" />
-            </div>
-            <div className="px-1 py-4">
-              <h3 className="lg:text-xl md:text-lg sm:text-lg mb-2">Project Gamma</h3>
-              <p className="text-md text-gray-700">A social media application with real-time updates and user interactions.</p>
-            </div>
-          </div>
-        </div>
-        {/* Skill Section  */}
-        <div className="lg:px-20 md:px-10 sm:px-5 px-5 py-4 mt-5">
-          <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-bold">Skills</h2>
-          <div className="pt-5 flex flex-wrap gap-4">
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faReact} /> React</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faNodeJs} />Node.js</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faLeaf} />MongoDB</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faServer} />Express.js</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faJs} />JavaScript</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faHtml5} />HTML5</h3>
-            <h3 className="border border-gray-400 rounded-md p-2 lg:text-xl md:text-xl sm:text-lg font-semibold"><FontAwesomeIcon icon={faCss3Alt} />CSS3</h3>
-          </div>
-        </div>
+        <Portfolio />
+        <Skills />
         {/* Contact Section  */}
         <div className="lg:px-20 md:px-10 sm:px-5 px-5 py-4 mt-5">
           <h2 className="lg:text-3xl md:text-2xl sm:text-2xl text-xl font-bold">Contact</h2>
