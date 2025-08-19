@@ -9,11 +9,12 @@ type Project = {
 
 export default function Portfolio() {
     const [projects, setProjects] = useState<Project[]>([]);
+    const URL = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
-        fetch("/db.json")
+        fetch(`${URL}/projects`)
             .then((res) => res.json())
-            .then((data) => setProjects(data.projects))
+            .then((data) => setProjects(data))
             .catch((err) => console.error("Error loading Projects:", err));
     }, [])
 

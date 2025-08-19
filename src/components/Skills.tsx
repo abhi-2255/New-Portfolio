@@ -22,11 +22,12 @@ const iconMap: Record<string, IconDefinition> = {
 
 export default function Skills() {
     const [skills, setSkills] = useState<Skill[]>([])
+    const URL = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
         axios
-            .get("/db.json")
-            .then((res) => setSkills(res.data.skills))
+            .get(`${URL}/skills`)
+            .then((res) => setSkills(res.data))
             .catch((err) => console.error("Error loading Skills:", err))
     }, [])
 
